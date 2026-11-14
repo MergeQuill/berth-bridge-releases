@@ -1,16 +1,16 @@
-# Berth Bridge
+# MQ Station
 
 **A terminal-first workspace for developers who work with AI agents.** macOS only.
 
-Berth keeps every project you are working on in one window: split terminals that
+MQ Station keeps every project you are working on in one window: split terminals that
 survive, a file tree, git status and diffs, a real editor with language servers, and
 the AI CLIs you already use — each running in its own git worktree, with its usage and
 quota visible while it works.
 
-**[Download the latest release](https://github.com/MergeQuill/berth-bridge-releases/releases/latest)**
-— open the `.dmg` and drag Berth Bridge to Applications. It updates itself afterwards.
+**[Download the latest release](https://github.com/MergeQuill/mq-station-releases/releases/latest)**
+— open the `.dmg` and drag MQ Station to Applications. It updates itself afterwards.
 
-Berth Bridge is in **beta**.
+MQ Station is in **beta**.
 
 ---
 
@@ -29,7 +29,7 @@ from.
 
 **Usage you can see.** Live token and quota panels for Claude, Codex, Gemini and
 Copilot, read from the CLIs' own local logs. Session and weekly windows, cost per
-turn, and a history of past conversations — including ones Berth never started.
+turn, and a history of past conversations — including ones MQ Station never started.
 
 **The Software Office.** Every open project as a team room on an isometric floor:
 each agent sits at a desk with its state over its head, raises a hand when it has a
@@ -51,7 +51,7 @@ stashes, worktrees, branch management, and a merge-conflict resolver. Diffs open
 editor tabs. A Git status page shows every project's branch and push state at once.
 
 **Servers.** Saved SSH servers in their own workspace, grouped and importable from
-`~/.ssh/config`, each opening as a tab with the same split panes. Berth runs your
+`~/.ssh/config`, each opening as a tab with the same split panes. MQ Station runs your
 system `ssh` and never stores a password or key.
 
 **Notes and to-dos.** Per-project markdown notes in a live-preview editor, and a
@@ -71,15 +71,15 @@ your choice. There is no account, no sync and no telemetry — see
 
 ## Install
 
-1. Download `Berth-Bridge_<version>_universal.dmg` from the
-   [latest release](https://github.com/MergeQuill/berth-bridge-releases/releases/latest).
-2. Open it and drag **Berth Bridge** to Applications.
+1. Download `MQ-Station_<version>_universal.dmg` from the
+   [latest release](https://github.com/MergeQuill/mq-station-releases/releases/latest).
+2. Open it and drag **MQ Station** to Applications.
 3. Launch it. macOS asks once to confirm an app "downloaded from the Internet" — that
    is normal Gatekeeper behaviour for anything outside the App Store.
 
 **Requirements:** macOS 11 or later, Apple Silicon or Intel (one universal build).
 Nothing else to install: the Node runtime and the language servers ship inside the app.
-The AI CLIs (Claude Code, Codex, Gemini, …) are not bundled — Berth launches the ones
+The AI CLIs (Claude Code, Codex, Gemini, …) are not bundled — MQ Station launches the ones
 already on your `PATH`.
 
 The app is signed with an Apple Developer ID and notarized by Apple. Updates are
@@ -91,7 +91,7 @@ verified against a signing key built into the app before it is installed.
 The TypeScript, Vue, Tailwind, Python (Pyright) and Copilot language servers ship inside the app —
 nothing to install. **PHP is the exception:**
 [Intelephense](https://intelephense.com/) is licensed in a way that forbids
-redistribution, so Berth cannot bundle it. Install it once and Berth finds it on your
+redistribution, so MQ Station cannot bundle it. Install it once and MQ Station finds it on your
 `PATH`:
 
 ```bash
@@ -100,7 +100,7 @@ npm i -g intelephense
 
 Without it, PHP files still get syntax highlighting, PHPStan/Larastan diagnostics and
 Pint formatting — only the LSP surface (completion, hover, go-to-definition,
-references, outline) stays off. Settings → Editor → LSP shows whether Berth found it.
+references, outline) stays off. Settings → Editor → LSP shows whether MQ Station found it.
 `phpactor`, the optional PHP refactor server, is likewise resolved from `PATH` and
 never bundled.
 
@@ -108,7 +108,7 @@ never bundled.
 
 ## Feedback and bugs
 
-Open an [issue](https://github.com/MergeQuill/berth-bridge-releases/issues/new/choose).
+Open an [issue](https://github.com/MergeQuill/mq-station-releases/issues/new/choose).
 Security problems go through a private report instead — see [SECURITY.md](SECURITY.md).
 
 ## Privacy
@@ -118,7 +118,7 @@ makes are listed in [PRIVACY.md](PRIVACY.md).
 
 ## Licence
 
-MIT — see [LICENSE](LICENSE). Third-party components, and what Berth deliberately
+MIT — see [LICENSE](LICENSE). Third-party components, and what MQ Station deliberately
 does *not* redistribute, are listed in
 [THIRD-PARTY-LICENSES.md](THIRD-PARTY-LICENSES.md).
 
