@@ -1,7 +1,7 @@
 # Third-Party Licences
 
-Berth itself is MIT licensed (see [`LICENSE`](LICENSE)). This file lists the
-third-party software Berth **redistributes** inside its macOS app bundle, and the
+MQ Station itself is MIT licensed (see [`LICENSE`](LICENSE)). This file lists the
+third-party software MQ Station **redistributes** inside its macOS app bundle, and the
 tools it merely *invokes* from your machine without shipping them.
 
 Version numbers below refer to the pins in `package.json`,
@@ -41,7 +41,7 @@ shipped `node_modules` tree.
 > **Note — nested `@github/copilot` is removed, not shipped.** The Copilot
 > language-server package vendors a copy of GitHub's Copilot CLI (`@github/copilot`)
 > under `dist/node_modules/`, whose `package.json` declares
-> `SEE LICENSE IN LICENSE.md` — GitHub's own terms, not MIT. Berth never loads it
+> `SEE LICENSE IN LICENSE.md` — GitHub's own terms, not MIT. MQ Station never loads it
 > (only `dist/language-server.js` runs; the CLI is reached solely from `dist/main.js`),
 > so `scripts/prepare-lsp-bundle.sh` deletes that directory during its prune step and
 > asserts it stayed deleted. Nothing under it is redistributed.
@@ -91,10 +91,10 @@ app's only unsolicited outbound request.
 
 ## 2. NOT redistributed — resolved from your machine
 
-Berth runs these only if you have installed them yourself; none is part of the
+MQ Station runs these only if you have installed them yourself; none is part of the
 download:
 
-| Tool | Why it is not bundled | How Berth finds it |
+| Tool | Why it is not bundled | How MQ Station finds it |
 |---|---|---|
 | [Intelephense](https://intelephense.com/) (PHP LSP) | Its licence forbids redistribution ("Reproduce, copy, distribute … except where permitted by INTENDED USE") | `PATH` lookup — `npm i -g intelephense` |
 | [phpactor](https://phpactor.readthedocs.io/) (optional PHP refactors) | Opt-in, user-installed | `PATH` lookup |
@@ -103,5 +103,5 @@ download:
 | Claude Code, Codex, Gemini, OpenCode, Antigravity, GitHub Copilot CLI | These are the agents you already run | `PATH` lookup |
 | `git` | System tool | `PATH` (network operations only; local reads use libgit2) |
 
-A premium Intelephense licence key entered in Berth's settings is stored locally and
+A premium Intelephense licence key entered in MQ Station's settings is stored locally and
 passed only to your own Intelephense process — see [`PRIVACY.md`](PRIVACY.md).
