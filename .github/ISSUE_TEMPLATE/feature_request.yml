@@ -1,11 +1,11 @@
 name: Feature request
-description: Suggest something Berth should do.
+description: Suggest something MQ Station should do.
 labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        Berth is macOS-only and its stack is fixed (Tauri 2 · Rust · React 19 ·
+        MQ Station is macOS-only and its stack is fixed (Tauri 2 · Rust · React 19 ·
         xterm.js · CodeMirror 6 · SQLite · Radix). Requests to support another
         platform or swap a stack layer will be closed.
 
@@ -20,7 +20,7 @@ body:
   - type: textarea
     id: proposal
     attributes:
-      label: What would you like Berth to do
+      label: What would you like MQ Station to do
     validations:
       required: true
 
