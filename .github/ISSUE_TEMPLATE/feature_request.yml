@@ -1,0 +1,39 @@
+name: Feature request
+description: Suggest something Berth should do.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Berth is macOS-only and its stack is fixed (Tauri 2 · Rust · React 19 ·
+        xterm.js · CodeMirror 6 · SQLite · Radix). Requests to support another
+        platform or swap a stack layer will be closed.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do
+      description: Describe the situation you hit, not the solution you have in mind.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like Berth to do
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: How do you work around it today
+      description: Including "I use another app for this step".
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: This is macOS-only work and does not require a new stack layer.
+          required: true
