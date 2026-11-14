@@ -1,0 +1,63 @@
+name: Bug report
+description: Something in Berth behaves incorrectly.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not report security problems here — use a
+        [security advisory](https://github.com/MergeQuill/berth-bridge-releases/security/advisories/new).
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what you got instead.
+      placeholder: |
+        1. Opened a project with two split panes
+        2. Launched a Claude agent in the right pane
+        3. Expected … but …
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Berth version
+      description: Settings → About.
+      placeholder: "0.3.50"
+    validations:
+      required: true
+
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version and chip
+      placeholder: "15.5, Apple Silicon"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install
+    attributes:
+      label: How did you install it
+      options:
+        - Built from source
+        - Downloaded a release build
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: >
+        Settings → Logs, plus anything relevant from the terminal you built or ran
+        Berth from. **Redact tokens, licence keys and `.env` values before pasting.**
+      render: text
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else
+      description: Which agent, which language server, which project type — whatever narrows it down.
